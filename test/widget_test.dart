@@ -7,6 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:student_card/App.dart';
 
 import 'package:student_card/main.dart';
 
