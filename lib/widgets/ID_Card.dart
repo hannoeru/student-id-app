@@ -5,10 +5,7 @@ import '../constants.dart';
 class IDCard extends StatelessWidget {
   const IDCard({
     Key key,
-    @required this.deviceHeight,
   }) : super(key: key);
-
-  final double deviceHeight;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +20,6 @@ class IDCard extends StatelessWidget {
       ),
       padding: EdgeInsets.all(18),
       width: double.infinity,
-      height: deviceHeight * 0.28,
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -218,9 +214,11 @@ class IDCard extends StatelessWidget {
                       ],
                     ),
                     child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10),
-                        child:
-                            Image(image: AssetImage("assets/UserImage.png"))),
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image(
+                        image: AssetImage("assets/UserImage.png"),
+                      ),
+                    ),
                   ),
                 ),
                 Positioned.fill(
