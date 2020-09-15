@@ -10,8 +10,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double deviceWidth = MediaQuery.of(context).size.width;
-    double deviceHeight = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.0),
@@ -31,7 +29,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            IDCard(deviceHeight: deviceHeight),
+            IDCard(),
             SizedBox(
               height: 20,
             ),
